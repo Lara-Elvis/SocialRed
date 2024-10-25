@@ -1,0 +1,21 @@
+<div class="messages-container">
+    <h2>Tus mensajes</h2>
+  
+    <form (submit)="onPostMessage()">
+      <div class="form-group">
+        <textarea [(ngModel)]="newMessage" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit">Post</button>
+    </form>
+  
+    <div class="posted-messages">
+      <h3>Mensajes recientes</h3>
+      <ul>
+        <li *ngFor="let message of messages">
+            <p>{{ message.content }}</p>
+            <span>{{ message.timestamp | date:'short' }}</span>
+          </li>
+      </ul>
+    </div>
+  </div>
+  

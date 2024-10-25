@@ -1,0 +1,24 @@
+header{
+    background-color: #e2e0e0;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+div{
+    display: flex;
+}
+
+.Username{
+    text-align: right;
+    margin-left: 70%;
+}
+
+.boton{
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

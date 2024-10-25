@@ -1,0 +1,12 @@
+<header>
+    <nav class="navbar">
+      <div class="container">
+        <p class="navbar-brand" href="#">App</p>
+        <div class="Username" *ngIf="currentUser">
+          <h3>Bienvenido, {{ currentUser.fullName }}</h3>
+          <button class="boton" (click)="logout()">Cerrar Sesión</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  

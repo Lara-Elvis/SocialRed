@@ -1,0 +1,39 @@
+.login-container{
+    display: flexbox;
+}
+
+.login-container h2{
+    display: flex;
+    margin-bottom: 20%;
+}
+
+.form-group label{
+    display: block;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    width: 70%;
+}
+
+.boton{
+    margin-top: 30px;
+    color: #fff;
+    background-color: #444444;
+    margin: none;
+    padding: 2px 16px;
+    border-radius: 4px;
+}
+
+.nuevo{
+    text-align: right;
+}
+
+.nuevo li{
+    margin-top: 80px;
+    cursor: pointer;
+    list-style-type: none;
+    color: blue;
+}

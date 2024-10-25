@@ -1,0 +1,25 @@
+<div class="dashboard-container">
+
+  <div class="latest-messages">
+    <h3>Ultimos mensajes</h3>
+    <ul>
+      <li *ngFor="let message of messages">
+        <p>{{ message.text }}</p>
+        <span>{{ message.timestamp | date:'short' }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="following">
+    <h3>Seguidores</h3>
+    <ul>
+        <li *ngFor="let user of followedUsers">{{ user.username }}</li>
+    </ul>
+  </div>
+
+  <div class="statistics">
+    <h3>Statistics</h3>
+    <p>Total Users: {{ totalUsers }}</p>
+    <p>Total Messages: {{ totalMessages }}</p>
+  </div>
+</div>
